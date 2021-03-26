@@ -1,0 +1,14 @@
+<div class="d-flex">
+  <div class="first-col border-right">
+    <input type="text" class="ml-1 mt-1" (keyup)="this.handleKeyFirstInput()" [(ngModel)]="this.firstInput">
+  </div>
+  <div class="w-auto">
+    <select class="ml-1 mt-1" (change)="this.handleChangeSecondInput()" [(ngModel)]="this.secondInput">
+      <option value="isPrime">isPrime</option>
+      <option value="isFibonacci">isFibonacci</option>
+    </select>
+  </div>
+  <div class="last-col border-left ml-auto">
+    <p class="ml-1 mt-1">{{this.lastInput}}</p>
+  </div>
+</div>
